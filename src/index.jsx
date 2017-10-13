@@ -1,13 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import App from './app'
-import { BrowserRouter, Route } from 'react-router-dom'
+import ContactDetails from './components/contact-details';
 
 ReactDOM.render(
   <BrowserRouter>
     <AppContainer>
-      <Route exact path="/" component={App} />
+      <div>
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route path="/contacts/:contactId" component={ContactDetails} />
+        </Switch>
+      </div>
     </AppContainer>
   </BrowserRouter>,
   document.getElementById('app')

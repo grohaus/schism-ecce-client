@@ -9,7 +9,7 @@ import MockData from '../__mocks__/fileMock';
 class App extends React.Component {
   constructor() {
    super();
-    this.state = { contacts: [], loading: true };
+    this.state = { contacts: [] };
   }
 
   componentWillMount() {
@@ -18,8 +18,7 @@ class App extends React.Component {
 
   loadContacts(){
     this.setState({
-      contacts: MockData.contacts,
-      loading: false
+      contacts: MockData.contacts
     })
   }
 
