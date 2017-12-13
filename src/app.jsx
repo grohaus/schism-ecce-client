@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/index.scss';
 import Header from './components/header';
+import Footer from './components/footer';
 import ContactGrid from './components/contact-grid';
 import MockData from '../__mocks__/fileMock';
 
@@ -27,6 +28,7 @@ class App extends React.Component {
       <div>
         <Header />
         <ContactGrid contacts={this.state.contacts} />
+        <Footer />
       </div>
     )
   }
