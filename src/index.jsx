@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import App from './app'
 import ContactDetails from './components/contact-details';
+import Menu from './components/menu';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -12,6 +13,7 @@ ReactDOM.render(
       <div>
         <Switch>
           <Route exact path="/" component={App} />
+          <Route path="/menu" component={Menu} />
           <Route path="/contacts/:contactId" component={ContactDetails} />
         </Switch>
       </div>
