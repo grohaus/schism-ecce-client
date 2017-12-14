@@ -18,25 +18,51 @@ html, body {
 }
 
 body{
+  margin: 0;
   font-family: quicksand;
   background-color: #123456;
   padding-bottom: 6rem;
   min-height: 100%;
 }
+
+.header-menu {
+  float:left;
+  width:20%;
+  background-color: #d66940;
+  border-bottom-right-radius: 20px;
+
+  a {
+    color: #123456;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  h3 {
+    margin: 10px 0;
+  }
+}
+
 .header {
-  width: 30%;
+  width: 80%;
+  float: left;
   margin: 0 auto;
   font-weight:bold;
   text-align: center;
-  color: teal;
+  vertical-align: middle;
   text-decoration: none;
-  h1{
-    font-size: 6em;
-    margin: 0;
-  }
-  h3{
+  color: #123456;
+  text-decoration: none;
+  font-size: 1em;
+  background-color: teal;
+  border-bottom-left-radius: 20px;
+  a {
+    color: #123456;
     font-size: 2em;
-    margin-top: 0;
+    text-decoration: none;
+  }
+  .header-text{
+    vertical-align: middle;
+    font-size: 2em;
+    margin: 10px 0;
   }
 }
 
@@ -89,25 +115,8 @@ body{
 img {
   width: 200px;
 }
-.footer {
-  color: #123456;
-  text-decoration: none;
-  font-size: 1em;
-  position: fixed;
-  left: 0;
-  bottom: -20px;
-  padding-bottom: 10px;
-  width: 100%;
-  background-color: teal;
-  text-align: center;
-  border-radius: 20px;
-}
 
 @media only screen and (max-width : 500px) {
-  .header{
-    width: 90%;
-  }
-
   img {
     width: 150px;
   }
