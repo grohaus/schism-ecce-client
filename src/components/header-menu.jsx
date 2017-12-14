@@ -7,8 +7,8 @@ export default class HeaderNav extends React.Component{
       <div className="header-menu">
         <Link to='/menu'>
           <div>
-            <h3>Me</h3>
-            <h3>nu</h3>
+            <h2 className="header-menu-top">ME</h2>
+            <h2 className="header-menu-bottom">NU</h2>
           </div>
         </Link>
       </div>
