@@ -11,8 +11,8 @@ class ContactGrid extends React.Component{
 
     return (
       <div className='grid'>
-        {this.props.contacts.map((details, i) => <Contact details={details} key={details.id} />)}
-    </div>
+        {this.props.contacts.map(details => <Contact details={details} key={details.id} />)}
+	    </div>
     )
   }
 }

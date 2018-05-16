@@ -121,8 +121,18 @@ body{
 }
 
 .emoji-container {
-  display: inline;
+  // display: inline;
   font-size: 5em;
+  // may adjust sizing
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.emoji-container:hover {
+  color: teal;
 }
 
 img {
@@ -130,8 +140,14 @@ img {
 }
 
 @media only screen and (max-width : 500px) {
-  img {
+  .emoji-container {
+    // display: inline;
+    font-size: 5em;
+    // may adjust sizing
+    height: 150px;
     width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .contact-item {
