@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header';
+import HeaderMenu from './header-menu';
 import PropTypes from 'prop-types';
 import MockData from '../../__mocks__/fileMock';
 
@@ -15,6 +16,7 @@ class ContactDetails extends React.Component {
   render(){
     return(
       <div>
+        <HeaderMenu />
         <Header />
         <div className='contact-detail-item'>
           <div className='contact-detail-header'>

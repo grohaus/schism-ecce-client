@@ -7,6 +7,8 @@ html {
 
 html, body {
   height: 100%;
+  color: teal;
+  text-align: center;
 }
 
 *,
@@ -16,25 +18,65 @@ html, body {
 }
 
 body{
+  margin: 0;
   font-family: quicksand;
   background-color: #123456;
-  padding-bottom: 6rem;
   min-height: 100%;
 }
+
+.menu-header {
+  h3{
+    margin-top:0;
+  }
+}
+
+.header-menu {
+  float:left;
+  width:22%;
+  background-color: #d66940;
+  border-bottom-right-radius: 20px;
+.header-menu-top {
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-menu-bottom {
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  a {
+    color: #123456;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  h2 {
+    margin: 10px 0;
+  }
+}
+
 .header {
-  width: 30%;
+  width: 78%;
+  float: left;
   margin: 0 auto;
   font-weight:bold;
   text-align: center;
-  color: teal;
+  vertical-align: middle;
   text-decoration: none;
-  h1{
-    font-size: 6em;
-    margin: 0;
-  }
-  h3{
+  color: #123456;
+  text-decoration: none;
+  font-size: 1em;
+  background-color: teal;
+  border-bottom-left-radius: 20px;
+  a {
+    color: #123456;
     font-size: 2em;
-    margin-top: 0;
+    text-decoration: none;
+  }
+  .header-text{
+    vertical-align: middle;
+    font-size: 2em;
+    margin: 10px 0;
   }
 }
 
@@ -48,7 +90,6 @@ body{
   float:left;
   width:25%;
   margin: 2% 12.5%;
-  height: 300px;
   font-size:2em;
   font-weight: bold;
   text-align: center;
@@ -67,7 +108,7 @@ body{
   text-align: center;
   color: teal;
   .contact-detail-header{
-    margin: 100px 0 50px 0;
+    margin: 0 0 50px 0;
   }
   .contact-detail-title{
     margin: 0;
@@ -80,34 +121,33 @@ body{
 }
 
 .emoji-container {
-  display: inline;
+  // display: inline;
   font-size: 5em;
+  // may adjust sizing
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.emoji-container:hover {
+  color: teal;
 }
 
 img {
   width: 200px;
 }
-.footer {
-  color: #123456;
-  text-decoration: none;
-  font-size: 1em;
-  position: fixed;
-  left: 0;
-  bottom: -20px;
-  padding-bottom: 10px;
-  width: 100%;
-  background-color: teal;
-  text-align: center;
-  border-radius: 20px;
-}
 
 @media only screen and (max-width : 500px) {
-  .header{
-    width: 90%;
-  }
-
-  img {
+  .emoji-container {
+    // display: inline;
+    font-size: 5em;
+    // may adjust sizing
+    height: 150px;
     width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .contact-item {

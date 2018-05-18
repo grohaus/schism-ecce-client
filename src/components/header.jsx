@@ -5,9 +5,8 @@ export default class Header extends React.Component{
   render () {
     return (
       <div className="header">
-        <Link className="header" to='/'>
-          <h1>ECCE</h1>
-          <h3>friends and family</h3>
+        <Link to='/'>
+          <h3 className="header-text">ECCE</h3>
         </Link>
       </div>
     );
